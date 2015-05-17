@@ -7,7 +7,7 @@
   <%@events.each do |event|%>
     <div class="col-xs-4">
       <div class="tile">
-        <%=image_tag event.logo.url, class: "tile-image", alt: event.name %>
+        <%=image_tag event.logo.listing.url, class: "tile-image", alt: event.name %>
         <h3 class="tile-title"><%=event.name%></h3>
         <p><%=event.description%></p>
         <%=link_to "Veja mais", event_path(event), class: "btn btn-primary btn-large btn-block"%>
