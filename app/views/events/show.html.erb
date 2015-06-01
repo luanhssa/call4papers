@@ -6,7 +6,7 @@
   <%=flash_messages%>
   <div class="col-md-4 sidebar">
     <div class="thumbnail">
-      <%=image_tag @event.logo.url, alt: @event.name %>
+      <%=image_tag @event.logo.thumb.url, alt: @event.name %>
       <div class="caption">
         <p><%=@event.description%></p>
       </div>
